@@ -1,0 +1,37 @@
+library(kinship2)
+bul50 <- pedigree(
+  id = c(1,2,3,4,5,6,7,8,9,10,11,12,13),
+  dadid = c(0,0,2,2,2,0,0,0,6,7,7,7,8), 
+  momid = c(0,0,1,1,1,0,0,0,3,4,4,4,5),
+  sex = c(2,1,2,2,2,1,1,1,1,1,2,2,1),
+  affected = c(0,0,0,0,0,0,0,0,1,1,1,1,1))
+mt = c("","","","","","","","","K1a4","-","K1a4","K1a+195T! ","-")
+y = c("","","","","","","","","G2a2a1","C1a2","","","")
+names= c("","","","","","","","","cch289","cch124","cth728","cth842","cch288")
+building= c("","","","","","","","","building 50","building 50","building 50","building 50","-")
+age= c("","","","","","","","","child","child","infant","infant","child")
+
+pdf("building50.1.pdf",width=8,height=8)
+plot(bul50,id=paste(names,age,mt,y,building,sep="\n"))
+dev.off()
+#### 
+"cch124","cth728" and "cth842" are all first degree related to each other, Considering that they are all subaduts, they can only be siblings. The individual "cch289" is second or third degree related with the three siblings according to Read2 and NGSRelate autosomal results. The individual "cch288" is third degree related with "cch289" and two of the siblings "cch124" and "cth842". Moreover there are signs of X chromosome relatedness between these individuals.
+
+bul50.2 <- pedigree(
+  id = c(1,2,3,4,5,6),
+  dadid = c(0,0,2,2,0,5), 
+  momid = c(0,0,1,1,0,4),
+  sex = c(2,1,1,2,1,1),
+  affected = c(0,0,1,0,0,1))
+mt = c("","","-","","","HV")
+y = c("","","G2a2a1","","","C1a2b")
+age= c("","","middle adult","","","neonate")
+names= c("","","cch223","","","cch294")
+building= c("","","building 50","","","building 50")
+
+
+pdf("building50.2.pdf",width=8,height=8)
+plot(bul50.2,id=paste(names,age,mt,y,building,sep="\n"))
+dev.off()
+
+
