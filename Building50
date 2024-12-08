@@ -46,7 +46,9 @@ building= c("","","building 50","","","building 50")
 
 
 pdf("building50.2.pdf",width=8,height=8)
-plot(bul50.2,id=paste(names,age,mt,y,building,sep="\n"))
+plot(bul50.2,col=c("black","black","darkseagreen1","black","black","darkseagreen1"),id=paste(names,age,mt,y,building,sep="\n"))
 dev.off()
 
+##################################
+cch223-cch294 Second Degree, First Degree on X with 920 snps
 
