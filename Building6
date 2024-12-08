@@ -9,11 +9,11 @@ bul6 <- pedigree(
 mt = c("","","","","N1a1a1b","","","","","N1a1a1b","N1a1a1b","N1a1a1b","","","N1a1a1b","N1a1")
 y = c("","","","","-","","","","","-","J2a1a2b","C1a2b","","","C1a2b","-")
 names = c("","","","","cch140","","","","","cch161","cch139","cch130","","","cch158","cch176")
-building = c("","","","","Buildng 6","","","","","Buildng 6","Buildng 6","Buildng 6","","","Buildng 6","Buildng 6")
+building = c("","","","","Building 6","","","","","Building 6","Building 6","Building 6","","","Building 6","Building 6")
 age = c("","","","","infant","","","","","neonate","neonate","prenatal","","","prenatal","infant")
 
 pdf("building6.pdf",width=10,height=10)
-plot(bul6,col=c("black","black","black","black","darkseagreen1","black","black","black","black","darkseagreen1","darkseagreen1","rosybrown3","black","black","rosybrown3","rosybrown3"),id=paste(names,age,mt,y,building,sep="\n"))
+plot(bul6,col=c("black","black","black","black","darkseagreen1","black","black","black","black","darkseagreen1","darkseagreen1","darkseagreen1","black","black","darkseagreen1","darkseagreen1"),id=paste(names,age,mt,y,building,sep="\n"))
 dev.off()
 
 #######################################3
