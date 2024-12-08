@@ -1,17 +1,17 @@
 
 library(kinship2)
 bul129 <- pedigree(
-  id = c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15),
-  dadid = c(14,0,0,1,1,1,0,1,0,3,6,8,0,0,14), 
-  momid = c(13,0,0,2,2,2,0,2,0,4,7,9,0,0,13),
-  sex = c(1,2,1,2,2,1,2,1,2,2,2,2,2,1,2),
-  affected = c(0,0,0,0,1,0,0,0,0,1,1,1,0,0,1))
-mt = c("","","","","T2","","","","","T2+16189!","N1b1a2","K1a12a","","","H")
-y = c("","","","","-","","","","","-","-","-","","","-")
-names=c("","","","","cch463","","","","","cch346","cch242","cch162","","","cch126")
-building= c("","","","","Building 129","","","","","Building 129","Building 129","Building 57","","","Building 128")
-age= c("","","","","adult","","","","","infant","old adult","neonate","","","young adult")
+  id = c(3,4,5,6,7,10,11,12,13),
+  dadid = c(0,0,0,3,3,6,6,0,11), 
+  momid = c(0,0,0,4,4,5,5,0,12),
+  sex = c(1,2,2,1,2,2,1,2,2),
+  affected = c(0,0,1,0,1,1,0,0,1))
+mt = c("","","T2","","K1a12a","T2","","","N1b1a2")
+y = c("","","-","","-","-","","","-")
+names=c("","","cch346","","cch162","cch463","","","cch242")
+building= c("","","Building 129","","Building 57","Building 129","","","Building 129")
+age= c("","","infant","","neonate","adult","","","old adult")
 
-pdf("building129.1.pdf",width=8,height=8)
-plot(bul129,id=paste(names,age,mt,y,building,sep="\n"))
+pdf("building129.1.pdf",width=10,height=10)
+plot(bul129,col=c("black","black","black","black","black","pink3","black","black","pink4"),id=paste(names,age,mt,y,building,sep="\n"))
 dev.off()
