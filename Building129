@@ -12,6 +12,16 @@ names=c("","","cch346","","cch162","cch463","","","cch242")
 building= c("","","Building 129","","Building 57","Building 129","","","Building 129")
 age= c("","","infant","","neonate","adult","","","old adult")
 
-pdf("building129.1.pdf",width=10,height=10)
+pdf("building129.pdf",width=10,height=10)
 plot(bul129,col=c("black","black","black","black","black","pink3","black","black","pink4"),id=paste(names,age,mt,y,building,sep="\n"))
 dev.off()
+
+#################################################
+cch162-cch242 Third Degree, Third Degree on X with 969 snps
+cch162-cch346 Unrelated, Unrelated on X with 314 snps
+cch162-cch463 Third Degree, Second Degree on X with 1021 snps
+
+cch242-cch346 Third Degree, Third Degree on X with 376 snps
+cch242-cch463 Second Degree, First Degree on X with 1301 snps
+
+cch346-cch463 Second Degree, Second Degree on X with 433 snps
