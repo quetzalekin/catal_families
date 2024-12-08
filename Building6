@@ -15,3 +15,24 @@ age= c("","","","","infant","","","","neonate","prenatal","","","","","child","p
 pdf("building6.pdf",width=10,height=10)
 plot(bul6,col=c("blue","blue","green","green","green","blue","blue","green","green","green","green","green","green","green","blue","green","green","green","green","green","green","green","green","green","blue"),id=paste(names,age,mt,y,building,sep="\n"))
 dev.off()
+
+#######################################3
+cch130-cch139 Third Degree
+cch130-cch140 Third Degree, Second Degree on X with 328 snps
+cch130-cch158 Second Degree
+cch130-cch161 Third Degree
+cch130-cch176 Second Degree, Third Degree on X
+
+cch139-cch140 Second Degree
+cch139-cch158 Unrelated
+cch139-cch161 Third Degree 
+cch139-cch176 Third Degree
+
+cch140-cch158 Third Degree
+cch140-cch161 Second Degree
+cch140-cch176 Third Degree, Third Degree on X with 618 snps
+
+cch158-cch161 Unrelated
+cch158-cch176 First Degree
+
+cch161-cch176 Third Degree
