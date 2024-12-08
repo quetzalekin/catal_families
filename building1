@@ -15,3 +15,31 @@ age=c("","","","","","","","","","","","","infant","child","infant","infant","ch
 pdf("building1.pdf",width=8,height=8)
 plot(bul1,id=paste(names,age,mt,y,building,sep="\n"))
 dev.off()
+
+cch131-cch152 Third Degree, First Degree on X with 269 snps
+cch131-cch155 Third Degree
+cch131-cch288 Third Degree
+cch131-cch296 Third Degree
+cch131-cch3208 First Degree, Identical on X with 1555 snps
+cch131-cch331 First Degree
+
+cch152-cch155 Third Degree
+cch152-cch288 Third Degree
+cch152-cch296 Third Degree
+cch152-cch3208 Third Degree, First Degree on X with 2225 snps
+cch152-cch331 Third Degree
+
+cch155-cch288 Third Degree
+cch155-cch296 Second Degree on Read2 with 2849 snps
+cch155-cch3208 Third Degree, Identical on X with 506 snps
+cch155-cch331 Third Degree on Read2 with 2273 snps
+
+cch288-cch296 Second or Third Degree
+cch288-cch3208 Third Degree, Unrelated on X with 840 snps
+cch288-cch331 Third Degree
+
+cch296-cch3208 Third Degree on NGSRelate, Identical on X with 529 snps
+cch296-cch331 Third Degree with 2329 snps 
+
+cch3208-cch331 First Degree, First Degree on X with 858 snps
+
