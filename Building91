@@ -5,7 +5,7 @@ bul91 <- pedigree(
   momid = c(0,0,1,0,0,1,1,0,1,0,1,0,3,3,6,7,10,12),
   sex = c(2,1,2,1,1,2,2,1,1,2,1,2,2,2,2,2,1,1),
   affected = c(0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1))
-names = c("","","","","","","","","","","","","cch531","cch747","cch288","cch129","cch339","cch254")
+names = c("","","","","","","","","","","","","cch531","cth747","cch288","cch129","cch339","cch254")
 mt = c("","","","","","","","","","","","","T2c","T2c1+146T!","H","T2","X2b","T2+16189!")
 building = c("","","","","","","","","","","","","Building 91","Building 91","-","Building 53","Building 1","Building 43")
 y = c("","","","","","","","","","","","","-","-","-","-","J2a1a2b2a2a","J2a")
@@ -13,3 +13,25 @@ age = c("","","","","","","","","","","","","middle adult","infant","child","inf
 pdf("building91.pdf",width=8,height=8)
 plot(bul91,id=paste(names,age,mt,y,building,sep="\n"))
 dev.off()
+
+
+
+cch129-cch254 Third Degree on Read2, Unrelated on X with 259 snps
+cch129-cch288 Third Degree on Read2, Unrelated on X with 176 snps
+cch129-cch339 Unrelated, Third Degree on X with 350 snps
+cch129-cch531 Third Degree on Read2, Unrelated on X with 116 snps
+cch129-cch747 Unrelated, First Degree on X with 418 snps
+
+cch254-cch288 Third Degree on Read2, Unrelated on X with 61 snps
+cch254-cch339 Unrelated
+cch254-cch531 Third Degree
+cch254-cth747 Third Degree on Read2, First Degree on X with 141 snps
+
+cch288-cch339 Third Degree on Read2, Second Degree on X with 114 snps
+cch288-cch531 Third Degree on Read2
+cch288-cth747 Third Degree on Read2, Second Degree on X with 123 snps
+
+cch339-cch531 Third Degree on Read2
+cch339-cth747 Unrelated. Third Degree on X with 242 snps
+
+cch531-cth747 First Degree
